@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <!--link tailwind-->
+          <link rel="stylesheet" href="/styles/output.css"/>
+         
+         
+         <!--Link para os icones-->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+         <!--Font poppins-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Hamburgueria Caiçara</title>
+</head>
+<body>
+    <!--Header-->
+  <header class="w-full h-{420px} bg-zinc-900 bg-home " style="background-image: url('assets/bg.png'); background-position: center; background-size: cover;">
+    <div class="w-full h-full flex-col justify-center items-center" style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; justify-items: center; padding: 1rem 0;">
+        <img src="assets/Hamburgueria.png" 
+        alt="logo hamburgueria caiçara"
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" 
+        />
+        <h1 class="text-3xl mt-4 mb-2 font-bold text-white ">Hamburgueria Caiçara  </h1>
+        <span class="text-white font-medium">Rua das praias 10, Ubatuba- SP</span>
+
+        <div class="bg-green-600 px-4 py-1 rounded-lg font-bold mt-5 text-white" id="date-span" >
+          <span>Seg à dom - 18:00 às 22:00</span>
+        </div>
+    </div>
+  </header>
+   <!--Fim Header-->
+
+    <!--menu-->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6 ">
+      Conheça nosso Menu
+    </h2>
+      
+    <!--INICIO MENU-->
+    <div id="menu">
+      
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-7 mn-auto max-w-7xl px-2 mb-16">
+         <!--produto item 1-->
+         <div class="flex gap-2">
+          <img 
+          src="assets/hamb-1.png" 
+          alt="hamburguer smash"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 ml-2" style="width: 7rem; height: 7rem;">
+        
+
+        <div>
+          <p class="font-bold">Hamburguer Smash</p>
+          <p class="text-sm ">Pão levinho de fermentação natural de trigo, burguer 160g queijo prato e maionese da casa.</p>
+        </div>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+           <p class="font-bold text-lg">R$ 18.90</p>
+           <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+           data-name="Hamburguer Smash"
+           data-price="18.90">
+            
+            <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2 text-lg text-white" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+            </svg>
+           </button>
+        </div>
+        </div>
+     
+        <!--FIM DO PRODUTO-->
+
+        <!--produto item 2-->
+         
+        <div class="flex gap-2">
+          <img src="assets/hamb-2.png " 
+          alt="hamburguer smach"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 ml-2" style="width: 7rem; height: 7rem;">
+ 
+
+        <div>
+          <p class="font-bold">Hamburguer Smach</p>
+          <p class="text-sm ">Pão levinho de fermentação natural de trigo, burguer 160g queijo prato e maionese da casa.</p>
+        </div>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+           <p class="font-bold text-lg">R$ 22.90</p>
+           <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+           data-name="Hamburguer Smash"
+           data-price="22.90">
+            
+            <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2 text-lg text-white" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+            </svg>
+           </button>
+        </div>
+        </div>
+        <!--FIM DO PRODUTO-->
+
+        <!--produto item 3-->
+         
+        <div class="flex gap-2">
+          <img src="assets/hamb-4.png " 
+          alt="hamburguer Salada"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 ml-2" style="width: 7rem; height: 7rem;">
+     
+
+        <div>
+          <p class="font-bold">Hamburguer Salada</p>
+          <p class="text-sm ">Pão levinho de fermentação natural de trigo, burguer 160g queijo prato e maionese da casa.</p>
+        </div>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+           <p class="font-bold text-lg">R$ 35.90</p>
+           <button 
+           class="bg-gray-900 px-5 rounded add-to-card-btn"
+           data-name="Hamburguer salada"
+           data-price="35.90">
+            
+            <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2 text-lg text-white" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+            </svg>
+           </button>
+        </div>
+        </div>
+        <!--FIM DO PRODUTO-->
+
+        <!--produto item 4-->
+         
+        <div class="flex gap-3">
+          <img src="assets/hamb-3.png " 
+          alt="hamburguer Cheddar"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 ml-2" style="width: 7rem; height: 7rem;">
+    
+
+        <div>
+          <p class="font-bold">Hamburguer Cheddar</p>
+          <p class="text-sm ">Pão levinho de fermentação natural de trigo, burguer 160g queijo prato e maionese da casa.</p>
+        </div>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+           <p class="font-bold text-lg">R$ 41.90</p>
+           <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+           data-name="Hamburguer Cheddar"
+           data-price="41.90">
+            
+            <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2 text-lg text-white" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+            </svg>
+           </button>
+        </div>
+        </div>
+        <!--FIM DO PRODUTO-->
+       
+      </main>
+       <!--fim grid-->
+
+      
+      <div class="mx-auto max-w-7xl px-2 my-2 ">
+        <h2 class="font-bold text-3xl">Bebidas</h2>
+      </div>
+
+        <!--grid bebidas-->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mn-auto max-w-7xl px-2 mb-16" id="menu">
+         
+        <!--produto item Bebidas-->
+         
+        <div class="flex gap-3 w-full">
+          <img src="assets/refri-1.png " 
+          alt="coca-lata"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 ml-2" style="width: 7rem; height: 7rem;">
+    
+
+        <div class="w-full">
+          <p class="font-bold">Coca lata 350ml</p>
+          
+        </div>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+           <p class="font-bold text-lg">R$ 7.00</p>
+           <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+           data-name="coca lata"
+           data-price="7.00">
+            
+            <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2 text-lg text-white" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+            </svg>
+           </button>
+        </div>
+        </div>
+        <!--FIM DO PRODUTO-->
+
+         <!--produto item Bebidas-->
+         
+         <div class="flex gap-3 w-full">
+          <img src="assets/refri-2.png " 
+          alt="coca-lata"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 ml-2" style="width: 7rem; height: 7rem;">
+    
+
+        <div class="w-full">
+          <p class="font-bold">Guaraná lata 350ml</p>
+          
+        </div>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+           <p class="font-bold text-lg">R$ 6.00</p>
+           <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+           data-name="Guarana"
+           data-price="6.00">
+            
+            <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2 text-lg text-white" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+            </svg>
+           </button>
+        </div>
+        </div>
+        <!--FIM DO PRODUTO-->
+      
+      </div>
+      <!--fim grid bebidas-->
+    </div>
+     <!--Fim menu-->
+      
+     <!--MODAL CART-->
+     <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] hidden items-center justify-center"
+     id="cart-modal">
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+        <p class="font-bold mt-4">Endereço de Entrega</p>
+        <input type="text"
+        placeholder="Digite seu endereço completo..."
+        id="adress"
+        class="w-full border-2 p-1 rounded my-1"
+        />
+        <p class="text-red-500 hidden" id="adress-warn">Digite seu endereço completo</p>
+
+        <div class="flex items-center justify-between mt-4 ">
+          <button id="close-modal-btn" class="bg-red-500 text-white px-4 py-1 rounded">
+            Fechar
+          </button>
+          <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">
+            Finalizar Pedido
+          </button>
+        </div>
+      </div>
+     </div>
+     <!--fim MODAL CART-->
+    
+     <!--Button card footer-->
+        <footer class="w-full bg-red-600 py-3 fixed bottom-0 z-40 flex items-center justify-center text-white">
+          <button class="flex gap-2 items-center font-bold"
+          id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Ver meu carrinho 
+            <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2 text-lg text-white" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+            </svg>
+          </button>
+        </footer>
+      <!--Fim Button card footer-->
+      <script src="script.js"></script>
+</body>
+</html>
